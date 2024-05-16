@@ -1,0 +1,79 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 8.5rem;
+  height: 2.1rem;
+}
+.switch input {display:none;}
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $black;
+  border: 2px solid $blue_1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  left: -2px;
+  bottom: -2px;
+  background: url('../../public/images/icons/TRIGALIGHT.webp') ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;    
+  background-color: $black_3;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 2px solid $blue_1;
+}
+input:checked + .switch-slider {
+  background-color: $black;
+  border: 2px solid $blue_1;
+}
+input:focus + .switch-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .switch-slider:before {
+  -webkit-transform: translateX(6.5rem);
+  -ms-transform: translateX(6.5rem);
+  transform: translateX(6.5rem);
+  background-color: $black;
+}
+.on{
+  display: none;
+}
+.on, .off{ 
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: .938rem;
+  font-family: $font-family-base;
+  font-weight: 500;
+  width: 75%;
+}
+.on{
+  color: $white;
+  text-align: left;
+}
+.off{
+  color: $white;
+  text-align: right;
+}
+input:checked+ .switch-slider .on
+{display: block;}
+input:checked + .switch-slider .off
+{display: none;}
+/* Rounded sliders */
+.switch-slider.round {
+  border-radius: 34px;
+}
+.switch-slider.round:before {
+  border-radius: 50%;}

@@ -1,0 +1,9 @@
+2024-01-07 23:23:32,545 - INFO - AddGateway Test START TIME: 2024-01-07 23:23:27 // END TIME: 2024-01-07 23:23:32 // All Tests Passed? : True // How many tests failed so far? : 0
+2024-01-07 23:23:50,115 - INFO - AddDataProt Test START TIME: 2024-01-07 23:23:32 // END TIME: 2024-01-07 23:23:50 // All Tests Passed? : True // How many tests failed so far? : 0
+2024-01-07 23:23:59,600 - INFO - GatewayConfig Test START TIME: 2024-01-07 23:23:50 // END TIME: 2024-01-07 23:23:59 // All Tests Passed? : True // How many tests failed so far? : 0
+2024-01-07 23:24:10,622 - INFO - HeadingCheck Test START TIME: 2024-01-07 23:23:59 // END TIME: 2024-01-07 23:24:10 // All Tests Passed? : True // How many tests failed so far? : 0
+2024-01-07 23:24:14,794 - INFO - JavelinSupport Test START TIME: 2024-01-07 23:24:10 // END TIME: 2024-01-07 23:24:14 // All Tests Passed? : True // How many tests failed so far? : 0
+2024-01-07 23:24:17,101 - INFO - Login Test START TIME: 2024-01-07 23:24:15 // END TIME: 2024-01-07 23:24:17 // All Tests Passed? : True // How many tests failed so far? : 0
+2024-01-07 23:24:22,225 - INFO - Playground Test START TIME: 2024-01-07 23:24:17 // END TIME: 2024-01-07 23:24:22 // All Tests Passed? : True // How many tests failed so far? : 0
+2024-01-07 23:24:54,710 - INFO - RemoveGateway Test START TIME: 2024-01-07 23:24:22 // END TIME: 2024-01-07 23:24:54 // All Tests Passed? : True // How many tests failed so far? : 0
+2024-01-07 23:25:04,598 - INFO - AddSecrets Test START TIME: 2024-01-07 23:24:55 // END TIME: 2024-01-07 23:25:04 // All Tests Passed? : False // How many tests failed so far? : 6

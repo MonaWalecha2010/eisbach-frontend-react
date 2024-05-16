@@ -1,0 +1,238 @@
+.hover-line {
+  display: inline-block;
+  position: relative;
+  color: $blue_1;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $blue_1;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  } 
+  &.lite:after{
+    height: 1px;
+    background-color: $white;
+    transition: transform 0.2s ease-out;
+  }
+  &.lite:hover:after{
+    height: 1px;
+    background-color: $white;    
+  }
+}
+.hover-line:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity:0;
+  } 
+  100% {
+    opacity:1;
+  }
+}
+@keyframes growDown {
+  0% {
+    transform: scaleY(0)
+  }  
+  100% {
+    transform: scaleY(1)
+  }
+}
+@keyframes bottomright {
+  0% {
+    width: 0;
+    height: 0;
+    padding-top: 0;
+    visibility: visible;
+  }
+  25% {
+    width: 100%;
+    height: 0;
+    padding-top: 0;
+    visibility: visible;
+  }
+  50% {
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes revbottomright {
+  0% {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+  }
+  25% {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+  }
+  50% {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+  }
+  75% {
+    width: 100%;
+    height: 0;
+    padding-top: 0;
+    visibility: visible;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    padding-top: 0;
+    visibility: hidden;
+  }
+}
+@keyframes topleft {
+  0% {
+    width: 0;
+    height: 0;
+    padding-bottom: 0;
+    visibility: hidden;
+  }
+  25% {
+    width: 0;
+    height: 0;
+    padding-bottom: 0;
+    visibility: hidden;
+  }
+  50% {
+    width: 0;
+    height: 0;
+    padding-bottom: 0;
+    visibility: hidden;
+  }
+  75% {
+    width: 100%;
+    height: 0;
+    padding-bottom: 0;
+    visibility: visible;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes revtopleft {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+  25% {
+    width: 100%;
+    height: 0;
+    padding-bottom: 0;
+    visibility: visible;
+  }
+  50% {
+    width: 0;
+    height: 0;
+    padding-bottom: 0;
+    visibility: hidden;
+  }
+  75% {
+    width: 0;
+    height: 0;
+    padding-bottom: 0;
+    visibility: hidden;
+  }
+  100% {
+    width: 0;
+    height: 0;
+    padding-bottom: 0;
+    visibility: hidden;
+  }
+}
+.draw-border{
+  position: relative;
+  border: 2px solid $gray_1;
+  transition: color 0.75s ease-in-out;
+  border-radius: .25rem;  
+}
+.draw-border:after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  padding-right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid $blue_1;
+  border-right: 2px solid $blue_1;
+  visibility: hidden;
+  border-radius: .25rem;
+}
+.draw-border:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid $blue_1;
+  border-left: 2px solid $blue_1;
+  visibility: hidden;
+  border-radius: .25rem;
+}
+.draw-border.hover:before,
+.draw-border.hover:after {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  border-radius: .25rem; 
+}
+.stroke .nav-link {
+  position: relative;
+}
+.stroke .nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: $white;
+  height: 1px;
+  transition: all .5s;
+}
+.stroke .nav-link:hover:after {
+  width: 100%;
+}
+@keyframes shake-animation {
+  0% { transform:translate(0,0) }
+  5% { transform:translate(5px,0) }
+  10% { transform:translate(0,0) }
+  15% { transform:translate(5px,0) }
+  20% { transform:translate(0,0) }
+  25% { transform:translate(5px,0) }
+  30% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}
+@keyframes glowing {
+	0% { box-shadow: 0 0 -7px #80c8e9; }
+	40% { box-shadow: 0 0 12px #80c8e9; }
+	60% { box-shadow: 0 0 12px #80c8e9; }
+	100% { box-shadow: 0 0 -7px #80c8e9; }
+}

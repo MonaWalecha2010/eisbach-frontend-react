@@ -1,0 +1,1 @@
+export  const maskText = (text: string) => '*'.repeat(text.length);

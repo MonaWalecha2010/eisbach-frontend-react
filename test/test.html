@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS Test</title>
+</head>
+<body>
+
+<h2>CORS Test</h2>
+<button onclick="testCORS()">Test CORS</button>
+
+<script>
+    function testCORS() {
+        fetch('https://api.getjavelin.io/development/api/v1/routes', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': 'wuIyKZnjdS3NOzf1cGJlSTvEXXXkkA169Pr5VR03'
+                // Any other headers you'd like to send
+            },
+            // If you need to send credentials (cookies, authentication)
+            // credentials: 'include'
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Server response was not ok.');
+            }
+        })
+        .then(data => {
+            console.log(data);
+            alert('Request succeeded');
+        })
+        .catch(error => {
+            console.error('CORS Error:', error);
+            alert('Request failed. Check the console for details.');
+        });
+    }
+</script>
+
+</body>
+</html>
+

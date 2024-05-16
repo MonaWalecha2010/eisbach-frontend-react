@@ -1,0 +1,50 @@
+// .updatenode__controls {
+//     position: absolute;
+//     right: 10px;
+//     top: 5px;
+//     z-index: 4;
+//     font-size: 12px;
+// }
+  
+// .updatenode__controls label {
+//     display: block;
+// }
+  
+.react-flow__node.selected{
+    border: 1px solid #5945FF;
+    border-radius: 5px;
+    /* color:rgb(234, 209, 209); */
+    //  background-color: #5945FF; 
+    outline: #5945FF;
+  }
+  // .react-flow__node{
+  //   border: 1px solid #000000;
+  //   /* color:rgb(234, 209, 209); */
+  //   /* background-color: #5945FF; */
+  //   outline: #2a2930;
+  //   width: auto !important;
+  //   height: auto !important;
+  // }
+  .react-flow .react-flow__handle {
+    width: 5px;
+    height: 15px;
+    border-radius: 3px;
+
+    background-color: #784be8;
+  }
+  
+  .text-updater-node {
+    border: 2px solid #eee;
+    padding: 3px;
+    border-radius: 5px;
+    background: white;
+    color: #1e1e1e;
+    font-size: 12px;
+  }
+  
+  .text-updater-node label {
+    display: block;
+    // color: #777;
+    // font-size: 12px;
+  }
+  
